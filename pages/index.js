@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import ChatCard from '../components/ChatCard'
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
@@ -8,15 +9,9 @@ export default function Home() {
         <title>Create Next/Tailwindcss App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="">
+      <Layout>
         <ChatCard />
-       
-      </main>
-
-      <footer className="">
-       
-      </footer>
+      </Layout>
     </div>
   )
 }
